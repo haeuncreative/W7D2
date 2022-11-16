@@ -1,0 +1,10 @@
+<% if flash[:errors] %>
+  <ul>
+  <% flash[:errors].each do |error| %>
+    <li><%= error %></li>
+  <% end %>
+  </ul>
+<% content_for :footer do %>
+  <p>Whoops! Something went wrong.</p>
+<% end %>
+<% end %>

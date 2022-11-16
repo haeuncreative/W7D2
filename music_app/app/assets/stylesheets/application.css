@@ -1,0 +1,98 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ html, body, section, article, h1, h2, p, main, figure {
+     margin: 0;
+     border: 0;
+     padding: 0;
+     font: inherit;
+     text-align: inherit;
+     text-decoration: inherit;
+     color: inherit;
+     background: transparent;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 15px;
+ }
+
+h1 {
+    font-size: 30px;
+}
+
+ nav {
+     width: 100%;
+     background-color: #545483;
+     height: 75px;
+     display: flex;
+     align-content: space-between;
+     align-items: center;
+     padding: 0 20px;
+     color: rgb(255, 255, 255);
+ }
+
+ form {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+ }
+
+ h1 {
+     font-size: 60px;
+     color: white
+ }
+
+ a {
+     color: white;
+ }
+
+
+ /* nav a {
+     padding: 0px 10px;
+ } */
+
+ table {
+     background-color: white;
+     margin: auto;
+ }
+
+ th {
+     background-color: #545483;
+     color: white;
+     padding: 10px 20px;
+ }
+
+ select,
+ input {
+     font-family: 'Montserrat';
+     background-color: inherit;
+     border: 1px solid rgb(143, 125, 189);
+     font-size: 14px;
+     margin: 5px 5px;
+     vertical-align: auto;
+ }
+
+ input[type="submit"]:hover {
+     cursor: pointer;
+ }
+
+
+
+ textarea {
+     display: flex;
+     margin: auto;
+     width: 300px;
+     background-color: white;
+ }
+
