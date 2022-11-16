@@ -13,9 +13,8 @@
 
   <body>
     <nav class="main-nav">
-    <div id="main-bar">
       <h1> contour </h1>
-        <section id="login-state">
+        <hr 40px>
         <% if current_user.nil? %>
           <a href="<%= new_session_url %>">Sign In</a>
           <p> || </p>
@@ -28,8 +27,6 @@
               <input type="submit" value="Logout">
             </form>
         <% end %>
-        </section>
-        </div>
     </nav>
     <main>
     <section class="page">

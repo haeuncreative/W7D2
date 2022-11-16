@@ -15,31 +15,34 @@
  */
 
  html, body, section, article, h1, h2, p, main, figure {
-     margin: 0;
-     border: 0;
-     padding: 0;
+     margin: 3%;
+     border: 3%;
+     padding: 3%;
      font: inherit;
      text-align: inherit;
      text-decoration: inherit;
      color: inherit;
-     background: transparent;
+     background: #545483;
      font-family: 'Montserrat', sans-serif;
-     font-size: 15px;
  }
 
-h1 {
-    font-size: 30px;
-}
 
  nav {
-     width: 100%;
-     background-color: #545483;
-     height: 75px;
+     /* width: 100%; */
+     /* background-color: #54548300; */
+     height: 50px;
      display: flex;
-     align-content: space-between;
+     flex-direction: row;
+     justify-content: space-around;
      align-items: center;
-     padding: 0 20px;
+     /* padding: -10px 20px; */
+     /* text-decoration-color: white; */
      color: rgb(255, 255, 255);
+     column-count: 2;
+ }
+
+ hr {
+    flex-grow: 50;
  }
 
  form {
@@ -58,27 +61,27 @@ h1 {
  }
 
 
- /* nav a {
-     padding: 0px 10px;
- } */
+ nav a, nav p {
+     padding: 7.2%;
+ }
 
  table {
      background-color: white;
      margin: auto;
  }
 
- th {
+  /* {
      background-color: #545483;
      color: white;
      padding: 10px 20px;
- }
+ } */
 
- select,
- input {
+ select, input {
      font-family: 'Montserrat';
-     background-color: inherit;
-     border: 1px solid rgb(143, 125, 189);
+     /* background-color: rgb(38, 35, 47); */
+     border-bottom-style: 1px dashed rgb(143, 125, 189);
      font-size: 14px;
+     /* color: white; */
      margin: 5px 5px;
      vertical-align: auto;
  }
@@ -87,8 +90,6 @@ h1 {
      cursor: pointer;
  }
 
-
-
  textarea {
      display: flex;
      margin: auto;
@@ -96,3 +97,7 @@ h1 {
      background-color: white;
  }
 
+label, h2, h3 {
+    font-weight: 200;
+    color: white;
+}
